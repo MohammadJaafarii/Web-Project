@@ -1,0 +1,779 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>product detail</title>
+</head>
+
+<body>
+    <header class="header pro-details-header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="img/Logo + Text.png" alt="logo">
+                </div>
+                <div class="search">
+                    <div class="search-bar">
+                        <span class="all">
+                            <span>All</span>
+                            <span class="arrow-bottom">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M3.21967 8.21967C3.51256 7.92678 3.98744 7.92678 4.28033 8.21967L10.8003 14.7397C11.2774 15.2168 12.0626 15.2168 12.5397 14.7397L19.0597 8.21967C19.3526 7.92678 19.8274 7.92678 20.1203 8.21967C20.4132 8.51256 20.4132 8.98744 20.1203 9.28033L13.6003 15.8003C12.5374 16.8632 10.8026 16.8632 9.73967 15.8003L3.21967 9.28033C2.92678 8.98744 2.92678 8.51256 3.21967 8.21967Z"
+                                        fill="#101316" />
+                                </svg>
+                            </span>
+                        </span>
+                        <span class="search-input">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2.75 11.5C2.75 16.3325 6.66751 20.25 11.5 20.25C16.3325 20.25 20.25 16.3325 20.25 11.5C20.25 6.66751 16.3325 2.75 11.5 2.75C6.66751 2.75 2.75 6.66751 2.75 11.5ZM11.5 21.75C5.83908 21.75 1.25 17.1609 1.25 11.5C1.25 5.83908 5.83908 1.25 11.5 1.25C17.1609 1.25 21.75 5.83908 21.75 11.5C21.75 14.0605 20.8111 16.4017 19.2589 18.1982L22.5303 21.4697C22.8232 21.7626 22.8232 22.2374 22.5303 22.5303C22.2374 22.8232 21.7626 22.8232 21.4697 22.5303L18.1982 19.2589C16.4017 20.8111 14.0605 21.75 11.5 21.75Z"
+                                    fill="#101316" />
+                            </svg>
+                            <input type="text" placeholder="Search" name="search" id="search">
+                        </span>
+                        <span class="search-btn-container">
+                            <button class="btn search-btn">Search</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="account-container">
+                <div class="buttons">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M2.75 11.5C2.75 16.3325 6.66751 20.25 11.5 20.25C16.3325 20.25 20.25 16.3325 20.25 11.5C20.25 6.66751 16.3325 2.75 11.5 2.75C6.66751 2.75 2.75 6.66751 2.75 11.5ZM11.5 21.75C5.83908 21.75 1.25 17.1609 1.25 11.5C1.25 5.83908 5.83908 1.25 11.5 1.25C17.1609 1.25 21.75 5.83908 21.75 11.5C21.75 14.0605 20.8111 16.4017 19.2589 18.1982L22.5303 21.4697C22.8232 21.7626 22.8232 22.2374 22.5303 22.5303C22.2374 22.8232 21.7626 22.8232 21.4697 22.5303L18.1982 19.2589C16.4017 20.8111 14.0605 21.75 11.5 21.75Z"
+                            fill="#101316" />
+                    </svg>
+
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.765 4.70229L12 5.52422L11.235 4.70229C9.12233 2.43257 5.69709 2.43257 3.58447 4.70229C1.47184 6.972 1.47184 10.6519 3.58447 12.9217L10.4699 20.3191C11.315 21.227 12.685 21.227 13.5301 20.3191L20.4155 12.9217C22.5282 10.6519 22.5282 6.972 20.4155 4.70229C18.3029 2.43257 14.8777 2.43257 12.765 4.70229Z"
+                            stroke="#101316" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                    <span class="cart-icon">
+                        <span class="count-circle">2</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11 20.5C11 21.3284 10.3284 22 9.5 22C8.67157 22 8 21.3284 8 20.5C8 19.6716 8.67157 19 9.5 19C10.3284 19 11 19.6716 11 20.5Z"
+                                stroke="#28303F" stroke-width="1.5" />
+                            <path
+                                d="M20 20.5C20 21.3284 19.3284 22 18.5 22C17.6716 22 17 21.3284 17 20.5C17 19.6716 17.6716 19 18.5 19C19.3284 19 20 19.6716 20 20.5Z"
+                                stroke="#28303F" stroke-width="1.5" />
+                            <path
+                                d="M6 4H18C20.2091 4 22 5.79086 22 8V13C22 15.2091 20.2091 17 18 17H10C7.79086 17 6 15.2091 6 13V4ZM6 4C6 2.89543 5.10457 2 4 2H2M6 8H21.5"
+                                stroke="#28303F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+
+                </div>
+                <div class="login">
+                    <button onclick="openLogin()" class="btn login-btn">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="menu-container">
+            <div class="categories">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M6.25 8C6.25 7.58579 6.58579 7.25 7 7.25H17C17.4142 7.25 17.75 7.58579 17.75 8C17.75 8.41421 17.4142 8.75 17 8.75H7C6.58579 8.75 6.25 8.41421 6.25 8ZM6.25 12C6.25 11.5858 6.58579 11.25 7 11.25H17C17.4142 11.25 17.75 11.5858 17.75 12C17.75 12.4142 17.4142 12.75 17 12.75H7C6.58579 12.75 6.25 12.4142 6.25 12ZM7 15.25C6.58579 15.25 6.25 15.5858 6.25 16C6.25 16.4142 6.58579 16.75 7 16.75H17C17.4142 16.75 17.75 16.4142 17.75 16C17.75 15.5858 17.4142 15.25 17 15.25H7Z"
+                        fill="#101316" />
+                </svg>
+
+                <select>
+                    <option>All categories</option>
+                </select>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="tab-bar">
+        <span>
+            <a href="index.html">Home</a> >
+        </span>
+        <span>
+            <a href="index.html">Shop</a> >
+        </span>
+        <span>
+            <span>Apple iPhone 14 Pro</span>
+        </span>
+    </div>
+
+    <section class="product-details-section">
+        <main class="pro-info">
+            <div class="pro-img">
+                <div class="main-picture-container">
+                    <img src="img/products/product-details/image 16.png" alt="">
+                </div>
+                <div class="thumb-pic">
+                    <span>
+                        <img src="img/products/product-details/image 17.png" alt="">
+                    </span>
+                    <span>
+                        <img src="img/products/product-details/image 17.png" alt="">
+                    </span>
+                    <span>
+                        <img src="img/products/product-details/image 17.png" alt="">
+                    </span>
+                    <span>
+                        <img src="img/products/product-details/image 17.png" alt="">
+                    </span>
+                </div>
+            </div>
+            <div class="pro-description-section">
+                <div class="pro-name">
+                    <h1>Apple iPhone 14 Pro</h1>
+                    <span class="stock-tag">In stock</span>
+                </div>
+                <div class="stars">
+                    <span class="star" data-rating="1">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="4">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="5">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span>5.0 (121 Reviews)</span>
+                </div>
+                <p class="product-price">$1999.00</p>
+                <p class="pro-description">
+                    It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution.
+                </p>
+                <h4>Color</h4>
+                <div class="color-container">
+                    <span class="color gray"></span>
+                    <span class="color blue"></span>
+                    <span class="color black"></span>
+                    <span class="color purple"></span>
+                </div>
+                <div class="cart-btn-container">
+                    <div class="count-btn">
+                        <span>-</span>
+                        <span>1</span>
+                        <span>+</span>
+                    </div>
+                    <button id="addToCart" class="btn cart-btn">Add to Cart</button>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.765 4.70229L12 5.52422L11.235 4.70229C9.12233 2.43257 5.69709 2.43257 3.58447 4.70229C1.47184 6.972 1.47184 10.6519 3.58447 12.9217L10.4699 20.3191C11.315 21.227 12.685 21.227 13.5301 20.3191L20.4155 12.9217C22.5282 10.6519 22.5282 6.972 20.4155 4.70229C18.3029 2.43257 14.8777 2.43257 12.765 4.70229Z"
+                            stroke="#101316" stroke-width="1.5" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h3 style="font-weight: bold;">Share</h3>
+                <div class="share-section">
+                    <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M18 3H15C12.2386 3 10 5.23858 10 8V10H6V14H10V21H14V14H18V10H14V8C14 7.44772 14.4477 7 15 7H18V3Z"
+                                fill="#101316" />
+                        </svg>
+
+                    </span>
+                    <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.2859 4C13.1821 4 11.4766 5.79086 11.4766 8C11.4766 8.33382 11.5155 8.65809 11.5889 8.96808C9.56599 8.96808 6.51902 8.55908 3.97432 6.00961C3.63593 5.67059 3.01196 5.89726 3.03543 6.37567C3.41256 14.0627 6.70465 16.3049 8.39998 16.4444C7.30523 17.5257 5.71498 18.3791 4.11477 18.7622C3.69244 18.8633 3.58811 19.3256 4.00108 19.4599C5.14611 19.8323 6.78504 19.9758 7.66723 20C13.9081 20 18.9805 14.7471 19.0934 8.22229C19.9127 7.68945 20.4376 6.5325 20.7325 5.71291C20.8043 5.5133 20.4772 5.28073 20.2813 5.36226C19.6693 5.61708 18.8922 5.67749 18.2303 5.46181C17.5316 4.56927 16.4721 4 15.2859 4Z"
+                                fill="#101316" />
+                        </svg>
+
+                    </span>
+                    <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7 2C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2H7ZM18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7ZM17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7C14.7614 7 17 9.23858 17 12ZM12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+                                fill="#101316" />
+                        </svg>
+
+                    </span>
+                </div>
+            </div>
+        </main>
+        <main class="pro-features-section">
+            <div class="tabs">
+                <span class="tab">Descriptions</span>
+                <span class="tab">Additional Information</span>
+                <span class="tab">Reviews</span>
+            </div>
+            <div class="long-desc">
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
+                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
+                    infancy.
+                </p>
+                <p>
+                    Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected
+                    humour and the like).</p>
+            </div>
+            <div class="product-features hidden">
+                <ul class="feature">
+                    <li>Brand</li>
+                    <li>Item Height</li>
+                    <li>Item Width</li>
+                    <li>Screen Size</li>
+                    <li>Model Number</li>
+                    <li>RAM Size</li>
+                    <li>Operating System</li>
+                </ul>
+                <ul class="value">
+                    <li>Apple</li>
+                    <li>65 CM</li>
+                    <li>31.4 CM</li>
+                    <li>6.5 Inch</li>
+                    <li>MF841HN/A</li>
+                    <li>6 GB</li>
+                    <li>ios 17</li>
+                </ul>
+            </div>
+            <div class="reviews hidden">
+                <div class="review-card">
+                    <h3>Customer Reviews</h3>
+                    <div class="user">
+                        <img src="img/Ellipse 956.png" alt="">
+                        <div>
+                            <p>Mark Williams</p>
+                            <img src="icons/Frame 1000001161.png" />
+                        </div>
+                    </div>
+                    <h4>Excellent Product, I Love It 😍</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters, as opposed to using 'Content here, content here', making it look like
+                        readable English.</p>
+                    <p class="review-by"><span>Review by</span> Electro <span>Posted on </span>Sep 08, 2023 </p>
+                </div>
+                <div class="review-card">
+                    <div class="user">
+                        <img src="img/Ellipse 956.png" alt="">
+                        <div>
+                            <p>Mark Williams</p>
+                            <img src="icons/Frame 1000001161.png" />
+                        </div>
+                    </div>
+                    <h4>Excellent Product, I Love It 😍</h4>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                        when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                        distribution of letters, as opposed to using 'Content here, content here', making it look like
+                        readable English.</p>
+                    <p class="review-by"><span>Review by</span> Electro <span>Posted on </span>Sep 08, 2023 </p>
+                </div>
+                <h3>Add your Review</h3>
+                <p>Your Rating</p>
+                <div class="rating">
+
+                    <span class="star" data-rating="1">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="2">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="3">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="4">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    <span class="star" data-rating="5">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.36064 2.72601C9.03121 1.31334 10.9687 1.31333 11.6393 2.72601L12.7982 5.16749C13.0645 5.72846 13.5792 6.11728 14.1746 6.20724L16.7661 6.59875C18.2655 6.82528 18.8642 8.74112 17.7792 9.84074L15.9041 11.7412C15.4732 12.1778 15.2766 12.807 15.3783 13.4235L15.821 16.107C16.0771 17.6596 14.5096 18.8437 13.1685 18.1106L10.8506 16.8437C10.3181 16.5526 9.68184 16.5526 9.14927 16.8437L6.83143 18.1106C5.49029 18.8437 3.92281 17.6596 4.17895 16.107L4.62162 13.4235C4.72333 12.807 4.52672 12.1778 4.09586 11.7412L2.22069 9.84074C1.13568 8.74113 1.7344 6.82528 3.23384 6.59875L5.82527 6.20724C6.4207 6.11728 6.93543 5.72846 7.20172 5.16749L8.36064 2.72601Z"
+                                stroke="#101316" stroke-opacity="0.8" stroke-linejoin="round" />
+                        </svg>
+
+                    </span>
+                </div>
+                <form action="#" class="review-form" id="review-form">
+                    <label for="name"> Name <br />
+                        <input id="review-title" type="text" name="" id="name" placeholder="Enter Your Name">
+                    </label>
+                    <label for="name"> Email Address <br />
+                        <input type="email" name="" id="email1" placeholder="Enter Your Email">
+                    </label>
+                    <label for="name"> Your Review <br />
+                        <textarea id="review-content" type="text" name="" id="review"
+                            placeholder="Enter Your Review"></textarea>
+                    </label>
+                    <button type="submit" class="btn">submit</button>
+                </form>
+            </div>
+        </main>
+    </section>
+    <section class="related-products">
+        <h2>Related Products</h2>
+        <div class="related-products-container">
+            <div class="pro-card">
+                <div class="pro-img-container">
+                    <img src="img/products/image 19.png" alt="">
+                </div>
+                <div class="pro-details">
+                    <h4>Apple iPad Mini 6 Wi-Fi</h4>
+                    <span>
+                        <img src="icons/Frame 1000001161.png" />
+                    </span>
+                    <p>$500.00</p>
+                </div>
+            </div>
+            <div class="pro-card">
+                <div class="pro-img-container">
+                    <img src="img/products/image 20.png" alt="">
+                </div>
+                <div class="pro-details">
+                    <h4>Microsoft Surface Go</h4>
+                    <span>
+                        <img src="icons/Frame 1000001161.png" />
+                    </span>
+                    <p>$399.00</p>
+                </div>
+            </div>
+            <div class="pro-card">
+                <div class="pro-img-container">
+                    <img src="img/products/image 21.png" alt="">
+                </div>
+                <div class="pro-details">
+                    <h4>LG 4K Ultra UHD TV</h4>
+                    <span>
+                        <img src="icons/Frame 1000001161.png" />
+                    </span>
+                    <p>$5500.00</p>
+                </div>
+            </div>
+            <div class="pro-card">
+                <div class="pro-img-container">
+                    <img src="img/products/image 18.png" alt="">
+                </div>
+                <div class="pro-details">
+                    <h4>Samsung Galaxy S22 Ultra</h4>
+                    <span>
+                        <img src="icons/Frame 1000001161.png" />
+                    </span>
+                    <p>$1350.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="top-section">
+            <div class="footer-column1">
+                <div class="logo">
+                    <img src="img/Logo + Text(white).png" alt="logo">
+                </div>
+                <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 16L14.8529 16.7354C15.1846 16.8018 15.5196 16.6379 15.6708 16.3354L15 16ZM8 9L7.66459 8.32918C7.36208 8.48043 7.19824 8.81544 7.26456 9.14709L8 9ZM8.35402 8.82299L8.68943 9.49381L8.68943 9.49381L8.35402 8.82299ZM9.31654 6.29136L10.0129 6.01281L9.31654 6.29136ZM8.50289 4.25722L7.80653 4.53576L8.50289 4.25722ZM19.7428 15.4971L19.4642 16.1935L19.7428 15.4971ZM17.7086 14.6835L17.9872 13.9871H17.9872L17.7086 14.6835ZM15.177 15.646L15.8478 15.9814V15.9814L15.177 15.646ZM16.25 11C16.25 11.4142 16.5858 11.75 17 11.75C17.4142 11.75 17.75 11.4142 17.75 11H16.25ZM16.6955 9.46927L17.3884 9.18225L16.6955 9.46927ZM14.5307 7.30448L14.8177 6.61157L14.5307 7.30448ZM13 6.25C12.5858 6.25 12.25 6.58579 12.25 7C12.25 7.41421 12.5858 7.75 13 7.75V6.25ZM20.25 11C20.25 11.4142 20.5858 11.75 21 11.75C21.4142 11.75 21.75 11.4142 21.75 11H20.25ZM20.391 7.93853L21.0839 7.65152L20.391 7.93853ZM16.0615 3.60896L16.3485 2.91605V2.91605L16.0615 3.60896ZM13 2.25C12.5858 2.25 12.25 2.58579 12.25 3C12.25 3.41421 12.5858 3.75 13 3.75V2.25ZM20.25 17.3541V19H21.75V17.3541H20.25ZM5 3.75H6.64593V2.25H5V3.75ZM15 16C15.1471 15.2646 15.1473 15.2646 15.1475 15.2646C15.1476 15.2647 15.1477 15.2647 15.1479 15.2647C15.1481 15.2648 15.1483 15.2648 15.1484 15.2648C15.1487 15.2649 15.1488 15.2649 15.1488 15.2649C15.1488 15.2649 15.1482 15.2648 15.147 15.2645C15.1447 15.264 15.14 15.2631 15.1331 15.2615C15.1193 15.2585 15.0967 15.2533 15.0659 15.2459C15.0044 15.2309 14.9104 15.2066 14.7898 15.1711C14.5482 15.1 14.2016 14.9847 13.7954 14.8106C12.9796 14.461 11.9439 13.8833 11.0303 12.9697L9.96967 14.0303C11.0561 15.1167 12.2704 15.789 13.2046 16.1894C13.6734 16.3903 14.0768 16.525 14.3665 16.6101C14.5115 16.6528 14.6285 16.6832 14.7114 16.7034C14.7529 16.7135 14.7859 16.721 14.8097 16.7263C14.8217 16.7289 14.8313 16.7309 14.8385 16.7325C14.8421 16.7332 14.8451 16.7339 14.8475 16.7343C14.8487 16.7346 14.8498 16.7348 14.8507 16.735C14.8511 16.7351 14.8515 16.7352 14.8519 16.7352C14.8521 16.7353 14.8523 16.7353 14.8524 16.7353C14.8527 16.7354 14.8529 16.7354 15 16ZM11.0303 12.9697C10.1167 12.0561 9.53901 11.0204 9.18936 10.2046C9.01527 9.79836 8.89996 9.45184 8.8289 9.21025C8.79342 9.08962 8.76912 8.99565 8.75414 8.93406C8.74666 8.90329 8.74151 8.88065 8.73847 8.86687C8.73695 8.85999 8.73595 8.85532 8.73546 8.85296C8.73521 8.85178 8.73509 8.85118 8.73508 8.85117C8.73508 8.85116 8.73511 8.8513 8.73517 8.85159C8.7352 8.85174 8.73524 8.85192 8.73528 8.85214C8.7353 8.85225 8.73534 8.85244 8.73535 8.8525C8.73539 8.8527 8.73544 8.85291 8 9C7.26456 9.14709 7.26461 9.14732 7.26466 9.14756C7.26468 9.14765 7.26473 9.1479 7.26477 9.14809C7.26484 9.14846 7.26492 9.14887 7.26501 9.14932C7.2652 9.15022 7.26541 9.15127 7.26566 9.15247C7.26615 9.15488 7.26677 9.15789 7.26753 9.1615C7.26905 9.16873 7.27111 9.17834 7.27374 9.19026C7.279 9.21408 7.28655 9.2471 7.29664 9.28859C7.31682 9.37154 7.34721 9.48851 7.38985 9.6335C7.47504 9.92316 7.60973 10.3266 7.81064 10.7954C8.21099 11.7296 8.88325 12.9439 9.96967 14.0303L11.0303 12.9697ZM8.33541 9.67082L8.68943 9.49381L8.01861 8.15217L7.66459 8.32918L8.33541 9.67082ZM10.0129 6.01281L9.19925 3.97868L7.80653 4.53576L8.62018 6.5699L10.0129 6.01281ZM20.0213 14.8008L17.9872 13.9871L17.4301 15.3798L19.4642 16.1935L20.0213 14.8008ZM14.5062 15.3106L14.3292 15.6646L15.6708 16.3354L15.8478 15.9814L14.5062 15.3106ZM17.9872 13.9871C16.6592 13.4559 15.1458 14.0313 14.5062 15.3106L15.8478 15.9814C16.1386 15.3999 16.8265 15.1384 17.4301 15.3798L17.9872 13.9871ZM8.68943 9.49381C9.96868 8.85419 10.5441 7.34076 10.0129 6.01281L8.62018 6.5699C8.86163 7.17351 8.60008 7.86143 8.01861 8.15217L8.68943 9.49381ZM6.64593 3.75C7.15706 3.75 7.6167 4.06119 7.80653 4.53576L9.19925 3.97868C8.78162 2.93462 7.77042 2.25 6.64593 2.25V3.75ZM21.75 17.3541C21.75 16.2296 21.0654 15.2184 20.0213 14.8008L19.4642 16.1935C19.9388 16.3833 20.25 16.8429 20.25 17.3541H21.75ZM19 20.25C10.5777 20.25 3.75 13.4223 3.75 5H2.25C2.25 14.2508 9.74923 21.75 19 21.75V20.25ZM19 21.75C20.5188 21.75 21.75 20.5188 21.75 19H20.25C20.25 19.6904 19.6904 20.25 19 20.25V21.75ZM3.75 5C3.75 4.30964 4.30964 3.75 5 3.75V2.25C3.48122 2.25 2.25 3.48122 2.25 5H3.75ZM17.75 11C17.75 10.3762 17.6271 9.75855 17.3884 9.18225L16.0026 9.75628C16.1659 10.1506 16.25 10.5732 16.25 11H17.75ZM17.3884 9.18225C17.1497 8.60596 16.7998 8.08232 16.3588 7.64124L15.2981 8.7019C15.5999 9.00369 15.8393 9.36197 16.0026 9.75628L17.3884 9.18225ZM16.3588 7.64124C15.9177 7.20016 15.394 6.85028 14.8177 6.61157L14.2437 7.99739C14.638 8.16072 14.9963 8.40011 15.2981 8.7019L16.3588 7.64124ZM14.8177 6.61157C14.2415 6.37286 13.6238 6.25 13 6.25V7.75C13.4268 7.75 13.8494 7.83406 14.2437 7.99739L14.8177 6.61157ZM21.75 11C21.75 9.85093 21.5237 8.71312 21.0839 7.65152L19.6981 8.22554C20.0625 9.10516 20.25 10.0479 20.25 11H21.75ZM21.0839 7.65152C20.6442 6.58992 19.9997 5.62533 19.1872 4.81282L18.1265 5.87348C18.7997 6.5467 19.3338 7.34593 19.6981 8.22554L21.0839 7.65152ZM19.1872 4.81282C18.3747 4.0003 17.4101 3.35578 16.3485 2.91605L15.7745 4.30187C16.6541 4.66622 17.4533 5.20025 18.1265 5.87348L19.1872 4.81282ZM16.3485 2.91605C15.2869 2.47633 14.1491 2.25 13 2.25V3.75C13.9521 3.75 14.8948 3.93753 15.7745 4.30187L16.3485 2.91605Z"
+                            fill="white" />
+                    </svg>
+                    (316) 555-0116
+                </span>
+                <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="2" y="3" width="20" height="18" rx="4" stroke="white" stroke-width="1.5" />
+                        <path d="M2 7L9.50122 13.001C10.9621 14.1697 13.0379 14.1697 14.4988 13.001L22 7" stroke="white"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    electro@example.com
+                </span>
+                <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="11" r="3" stroke="white" stroke-width="1.5" />
+                        <path
+                            d="M21 10.8889C21 15.7981 15.375 22 12 22C8.625 22 3 15.7981 3 10.8889C3 5.97969 7.02944 2 12 2C16.9706 2 21 5.97969 21 10.8889Z"
+                            stroke="white" stroke-width="1.5" />
+                    </svg>
+                    4140 Parker Rd. Allentown,
+                    New Mexico 31134
+                </span>
+            </div>
+            <div class="footer-column2">
+                <h3>Information</h3>
+                <ul>
+                    <li>
+                        <a href="#">My Account</a>
+                    </li>
+                    <li>
+                        <a href="#">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">My Cart</a>
+                    </li>
+                    <li>
+                        <a href="#">My Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Checkout</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column3">
+                <h3>Service</h3>
+                <ul>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">Delivery Information</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-column4">
+                <h3>Subscribe</h3>
+                <p>Enter your email below to be the first to know about new collections.</p>
+                <div class="email-section">
+                    <div>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="18" rx="4" stroke="white" stroke-width="1.5" />
+                            <path d="M2 7L9.50122 13.001C10.9621 14.1697 13.0379 14.1697 14.4988 13.001L22 7"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <input type="email" name="" placeholder="Your Email" id="">
+                    </div>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 8L18 12M18 12L14 16M18 12L6 12" stroke="white" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="bottom-section">
+            <img src="img/Group 427319079.png" />
+            <p>©2023 Electro All Rights are reserved️ </p>
+            <img src="img/Frame 1000001018.png" alt="">
+        </div>
+
+
+        <!-- cart section -->
+        <div id="cartSection" class="cart-sidebar hidden">
+
+            <div class="wrapper"></div>
+            <article class="cart-section">
+                <div>
+
+                    <p>You have <strong class="item-count"><span>2</span> items</strong> in your cart</p>
+                    <div class="cart-product">
+                        <div class="cart-product-item">
+                            <div class="img-pro">
+                                <img src="img/products/cart/image 16.png" alt="">
+                            </div>
+                            <div class="cart-product-deatils">
+                                <h5>Apple iPhone 14 Pro</h5>
+                                <h4>$1999.00</h4>
+                                <span>QTY: 1</span>
+                            </div>
+                            <span class="trash">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.16667 6.66675V15.0001C4.16667 16.841 5.65905 18.3334 7.5 18.3334H12.5C14.3409 18.3334 15.8333 16.841 15.8333 15.0001V6.66675M11.6667 9.16675V14.1667M8.33333 9.16675L8.33333 14.1667M13.3333 4.16675L12.1614 2.40891C11.8523 1.94525 11.3319 1.66675 10.7747 1.66675H9.22531C8.66805 1.66675 8.14767 1.94525 7.83856 2.40891L6.66667 4.16675M13.3333 4.16675H6.66667M13.3333 4.16675H17.5M6.66667 4.16675H2.5"
+                                        stroke="#FF7262" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+
+                        </div>
+                        <div class="cart-product-item">
+                            <div class="img-pro">
+                                <img src="img/products/cart/image 25.png" alt="">
+                            </div>
+                            <div class="cart-product-deatils">
+                                <h5>Asus ROG Delta S</h5>
+                                <h4>$250.00</h4>
+                                <span>QTY: 1</span>
+                            </div>
+                            <span class="trash">
+
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4.16667 6.66675V15.0001C4.16667 16.841 5.65905 18.3334 7.5 18.3334H12.5C14.3409 18.3334 15.8333 16.841 15.8333 15.0001V6.66675M11.6667 9.16675V14.1667M8.33333 9.16675L8.33333 14.1667M13.3333 4.16675L12.1614 2.40891C11.8523 1.94525 11.3319 1.66675 10.7747 1.66675H9.22531C8.66805 1.66675 8.14767 1.94525 7.83856 2.40891L6.66667 4.16675M13.3333 4.16675H6.66667M13.3333 4.16675H17.5M6.66667 4.16675H2.5"
+                                        stroke="#FF7262" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="price-section">
+                        <h3>Subtotal</h3>
+                        <h3>$2249.00</h3>
+                    </div>
+                    <button class="btn view-cart-btn">View Cart</button>
+                    <button class="btn checkout">Checkout</button>
+                </div>
+            </article>
+        </div>
+
+
+        <!-- login section -->
+        <div id="login" class="hidden">
+
+            <div class="wrapper"></div>
+            <span class="close">x</span>
+            <section class="login-container">
+                <h2>Welcome 👋 </h2>
+                <p style="color: #A5A9AC;">Please login here</p>
+                <form action="#" class="login-form">
+                    <label for="email">Email Address
+                        <input type="email" name="email" id="email">
+                    </label>
+                    <label for="password">Password
+                        <input type="password" name="password" id="password">
+                    </label>
+                    <div class="forgot-password-container">
+                        <label for="remember">
+                            <input type="checkbox" style="margin-right: 5px;" name="remember" id="remember">Remember
+                            Me
+                        </label>
+                        <span><a href="#">Forgot Password?</a></span>
+                    </div>
+                    <button class="btn login">Login</button>
+                    <button class="btn register">Register</button>
+                    <div class="another-login">
+                        <div class="little-line"></div>
+                        <p>Or Login With</p>
+                        <div class="little-line"></div>
+                    </div>
+                    <button class="btn google">
+                        <img src="icons/Group 57.png" alt="">
+                        Login With Google
+                    </button>
+                    <button class="btn apple">
+                        <img src="icons/apple.png" alt="">
+                        Login with Apple
+                    </button>
+                </form>
+            </section>
+        </div>
+
+        <!-- register section -->
+        <div id="register" class="hidden">
+
+            <div class="register-wrapper"></div>
+            <span class="close-register">x</span>
+            <section class="login-container">
+                <h2>Create New Account </h2>
+                <p style="color: #A5A9AC;">Please enter details</p>
+                <form action="#" class="login-form">
+                    <label for="name1">Name
+                        <input type="text" name="name1" id="name1">
+                    </label>
+                    <label for="register-email">Email Address
+                        <input type="email" name="register-email" id="register-email">
+                    </label>
+                    <label for="register-password">Password
+                        <input type="password" name="register-password" id="register-password">
+                    </label>
+                    <div class="forgot-password-container">
+                        <label for="agree">
+                            <input type="checkbox" style="margin-right: 5px;" name="agree" id="agree">I agree to the
+                            Terms &
+                            Conditions
+                        </label>
+                    </div>
+                    <button class="btn register-btn">Register</button>
+                    <div class="another-login">
+                        <div class="little-line"></div>
+                        <p>Or Login With</p>
+                        <div class="little-line"></div>
+                    </div>
+                    <button class="btn google">
+                        <img src="icons/Group 57.png" alt="">
+                        Login With Google
+                    </button>
+                    <button class="btn apple">
+                        <img src="icons/apple.png" alt="">
+                        Login with Apple
+                    </button>
+                </form>
+            </section>
+        </div>
+
+
+        <!-- send otp -->
+        <div id="otp" class="hidden">
+
+            <div class="otp-wrapper"></div>
+
+            <section class="otp-section">
+                <h3>Enter OTP</h3>
+                <p style="color: #A5A9AC;">We have share a code of your registered email address
+                    kristin.watson@example.com
+                </p>
+                <div class="otp-input">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                    <input type="text" maxlength="1">
+                </div>
+                <button class="btn otp">Send OTP</button>
+            </section>
+        </div>
+
+        <!-- successfull otp -->
+        <div id="otpSuccess" class="hidden">
+            <div class="otp-success-wrapper"></div>
+            <div class="otp-success">
+                <svg width="108" height="108" viewBox="0 0 108 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="54" cy="54" r="54" fill="#1C4E8E" fill-opacity="0.1" />
+                    <circle cx="54" cy="54" r="43" fill="#1C4E8E" fill-opacity="0.2" />
+                    <circle cx="54" cy="54" r="32" fill="#1C4E8E" />
+                    <rect x="46" y="49" width="16" height="14" rx="4" stroke="white" stroke-width="1.5" />
+                    <circle cx="54" cy="56" r="2" stroke="white" stroke-width="1.5" />
+                    <path d="M58 49C58 46.7909 56.2091 45 54 45C51.7909 45 50 46.7909 50 49" stroke="white"
+                        stroke-width="1.5" />
+                </svg>
+                <h2 style="text-align: center;">
+                    Password Changed Successfully
+                </h2>
+                <p>Your password has been updated successfully</p>
+                <button class="btn back-to-login">
+                    Back to Login
+                </button>
+            </div>
+
+        </div>
+
+    </footer>
+    <script src=JS/script.js></script>
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <script src=JS/productScript.js></script>
+    <script src="JS/api.js" ></script>
+
+</body>
+
+</html>
